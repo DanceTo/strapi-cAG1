@@ -38,6 +38,12 @@
       "enum": ["draft", "published", "archived"],
       "default": "draft",
       "required": true
+    },
+    "region": {
+      "type": "enumeration",
+      "enum": ["kherson", "zp", "krym", "donetsk", "luhansk"],
+      "default": "draft",
+      "required": true
     }
   }
 }
