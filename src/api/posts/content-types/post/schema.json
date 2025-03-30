@@ -26,6 +26,18 @@
       "type": "media",
       "multiple": false,
       "required": false
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "unique": true,
+      "required": true
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": ["draft", "published", "archived"],
+      "default": "draft",
+      "required": true
     }
   }
 }
