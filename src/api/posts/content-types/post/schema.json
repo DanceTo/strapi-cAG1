@@ -6,9 +6,7 @@
     "pluralName": "posts",
     "displayName": "Posts"
   },
-  "options": {
-    "draftAndPublish": true
-  },
+
   "attributes": {
     "title": {
       "type": "string",
@@ -18,10 +16,6 @@
       "type": "uid",
       "targetField": "title",
       "unique": true,
-      "required": true
-    },
-    "summary": {
-      "type": "text",
       "required": true
     },
     "content": {
