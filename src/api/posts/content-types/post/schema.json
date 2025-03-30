@@ -37,21 +37,6 @@
     "publishedAt": {
       "type": "datetime",
       "required": true
-    },
-    "image": {
-      "type": "media",
-      "multiple": false,
-      "required": false
-    },
-    "status": {
-      "type": "enumeration",
-      "enum": ["draft", "published", "archived"],
-      "default": "draft",
-      "required": true
-    },
-    "createdAt": {
-      "type": "datetime",
-      "default": "{now}"
     }
   }
 }
