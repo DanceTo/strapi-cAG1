@@ -34,12 +34,6 @@
       "target": "api::category.category",
       "inversedBy": "posts"
     },
-    "author": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "plugin::users-permissions.user",
-      "inversedBy": "posts"
-    },
     "publishedAt": {
       "type": "datetime",
       "required": true
@@ -49,12 +43,6 @@
       "multiple": false,
       "required": false
     },
-    "tags": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::tag.tag",
-      "inversedBy": "posts"
-    },
     "status": {
       "type": "enumeration",
       "enum": ["draft", "published", "archived"],
@@ -62,10 +50,6 @@
       "required": true
     },
     "createdAt": {
-      "type": "datetime",
-      "default": "{now}"
-    },
-    "updatedAt": {
       "type": "datetime",
       "default": "{now}"
     }
