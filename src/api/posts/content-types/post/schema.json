@@ -21,6 +21,11 @@
     "publishedAt": {
       "type": "datetime",
       "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false
     }
   }
 }
